@@ -4,13 +4,16 @@
   justify-content: space-between;
   gap: 20px;
   padding: 10px 20px;
+  font-family: inherit;
 }
 
 .navbarItem {
   flex: 1;
+  font-family: inherit;
 }
 
 .activeTabStyle {
   background-color: cadetblue;
   flex: 1;
+  font-family: inherit;
 }
