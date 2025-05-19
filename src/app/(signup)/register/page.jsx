@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const schema = yup.object().shape({
   id: yup.number().required("ID is required!").positive().integer(),
@@ -22,6 +22,8 @@ const schema = yup.object().shape({
 });
 
 const page = () => {
+  const pathname = usePathname();
+
   const {
     register,
     handleSubmit,
@@ -103,7 +105,7 @@ const page = () => {
         </button>
       </form>
 
-      <Link href={"/signup/login"}>
+      <Link href={"/login"}>
         <button className={styles.notResgitered}>
           Already Registered? sign in
         </button>

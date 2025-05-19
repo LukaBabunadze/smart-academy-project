@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import styles from "./page.module.css";
-import { handleLogin } from "../actions";
 import { useState } from "react";
 import { redirect } from "next/navigation";
 
@@ -48,7 +47,7 @@ const page = () => {
         <button className={styles.button} type="submit">
           Sign In
         </button>
-        <Link href={"/signup/register"}>
+        <Link href={"/register"}>
           <button className={styles.notResgitered}>
             Not Registered? sign up
           </button>
