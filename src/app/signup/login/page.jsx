@@ -48,7 +48,7 @@ const page = () => {
         <button className={styles.button} type="submit">
           Sign In
         </button>
-        <Link href={"/products"}>
+        <Link href={"/signup/register"}>
           <button className={styles.notResgitered}>
             Not Registered? sign up
           </button>
