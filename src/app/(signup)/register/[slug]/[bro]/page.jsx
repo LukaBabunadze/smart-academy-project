@@ -2,11 +2,11 @@
 
 import { useParams } from "next/navigation";
 
-const page = () => {
+const Page = () => {
   const params = useParams();
 
   console.log(params);
   return <div>page</div>;
 };
 
-export default page;
+export default Page;

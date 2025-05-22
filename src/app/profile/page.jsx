@@ -4,7 +4,7 @@ import { changeEmail } from "@/lib/slices/userSlice";
 import { redirect } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 
-const page = () => {
+const Page = () => {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
@@ -28,4 +28,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

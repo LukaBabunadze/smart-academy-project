@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import { useState } from "react";
 import { redirect } from "next/navigation";
 
-const page = () => {
+const Page = () => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
 
@@ -60,4 +60,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

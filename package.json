@@ -17,5 +17,9 @@
     "react-hook-form": "^7.56.4",
     "react-redux": "^9.2.0",
     "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "9.27.0",
+    "eslint-config-next": "15.3.2"
   }
 }

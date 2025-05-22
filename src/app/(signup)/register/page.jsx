@@ -21,7 +21,7 @@ const schema = yup.object().shape({
     .max(10, "maximum 10 characters"),
 });
 
-const page = () => {
+const Page = () => {
   const pathname = usePathname();
 
   const {
@@ -114,4 +114,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
