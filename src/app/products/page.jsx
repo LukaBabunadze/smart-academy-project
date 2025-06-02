@@ -4,9 +4,13 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useAppSelector } from "@/lib/hooks";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
+  const user = useAppSelector(store => store.user);
+
+  console.log(user)
   const router = useRouter();
 
   const fetchProducts = async () => {
