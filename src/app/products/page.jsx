@@ -4,16 +4,21 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useAppSelector } from "@/lib/hooks";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
   const router = useRouter();
 
+  const user = useAppSelector(store => store.user)
+
+  console.log('this is user', user.email)
+  
   const fetchProducts = async () => {
     try {
       const response = await fetch("https://fakestoreapi.com/products");
       const result = await response.json();
-
+      
       console.log(result);
       setProducts(result);
     } catch (error) {

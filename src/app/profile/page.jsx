@@ -1,12 +1,12 @@
 "use client";
 
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { changeEmail } from "@/lib/slices/userSlice";
 import { redirect } from "next/navigation";
-import { useDispatch, useSelector } from "react-redux";
 
 const Page = () => {
-  const user = useSelector((state) => state.user);
-  const dispatch = useDispatch();
+  const user = useAppSelector((state) => state.user);
+  const dispatch = useAppDispatch();
 
   const handleLogout = () => {
     localStorage.removeItem("token");

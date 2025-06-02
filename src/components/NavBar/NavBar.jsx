@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css";
 
 const DATA = [
   { id: 1, title: "products", link: "/products" },
-  { id: 2, title: "cart", link: "/cart" },
+  { id: 2, title: "cart", link: "/carts" },
   { id: 3, title: "profile", link: "/profile" },
 ];
 
